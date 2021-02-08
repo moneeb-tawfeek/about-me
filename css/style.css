@@ -1,0 +1,15 @@
+h1 {
+    margin-left: 500px;
+    line-height: 3em;
+    color: rgb(211, 54, 54);
+    font-size: 50px;
+    
+}
+header {
+    border-bottom: 5px solid #242ec0;
+}
+.tit {
+    color: #086b31;
+    font-size:x-large;
+
+}
