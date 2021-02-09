@@ -13,3 +13,11 @@ header {
     font-size:x-large;
 
 }
+body{
+    background-color: rgb(167, 132, 151);
+}
+ol{
+color: rgb(190, 58, 98);   
+font-size: larger; 
+
+}
