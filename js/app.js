@@ -10,16 +10,18 @@ function greetTheUser(userName) {
     return  alert('welcome ' + userName + ' nice to meet you, we are going to have fun together and play a guessing game')
 }
 ////////////////////////////////////////////////////////////////////////////
-
-let work = prompt('is i am a pharmacist ?');
-work = work.toLowerCase();
-if ((work === 'yes') || (work === 'y')) {
-    alert('good jop, that is true')
-    score++
-} else if ((work === 'no') || (work === 'n')) {
-    alert('your answer is false ')
+function askQuestionOne() {
+    let work = prompt('is i am a pharmacist ?');
+    work = work.toLowerCase();
+    if ((work === 'yes') || (work === 'y')) {
+        alert('good jop, that is true')
+        return score++;
+    } else if ((work === 'no') || (work === 'n')) {
+        return alert('your answer is false ');
+    }
+    
 }
-console.log(work);
+// console.log(work);
 
 let food = prompt('is my favorites food mansaf  ?').toLowerCase();
 if ((food === 'yes') || (food === 'y')) {
@@ -116,11 +118,10 @@ for (let i = 0; i < 6; i = i + 1) {
 let userName = getUsername();
 greetTheUser(userName);
 askQuestionOne();
-askQuestionTwo());
+askQuestionTwo();
 askQuestionThree();
 askQuestionFour();
 askQuestionFive();
-
 
 
 // let number = 5;
