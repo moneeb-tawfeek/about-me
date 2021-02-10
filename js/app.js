@@ -1,10 +1,16 @@
 
 'use strict';
-let userName = prompt("what's your name?");
-console.log(userName);
-alert('welcome ' + userName + ' nice to meet you, we are going to have fun together and play a guessing game')
-
+// console.log(userName);
 let score = 0;
+function getUsername() {
+    let userName = prompt("what's your name?");
+    return userName;
+}
+function greetTheUser(userName) {
+    return  alert('welcome ' + userName + ' nice to meet you, we are going to have fun together and play a guessing game')
+}
+////////////////////////////////////////////////////////////////////////////
+
 let work = prompt('is i am a pharmacist ?');
 work = work.toLowerCase();
 if ((work === 'yes') || (work === 'y')) {
@@ -22,7 +28,7 @@ if ((food === 'yes') || (food === 'y')) {
 } else if ((food === 'no') || (food === 'n')) {
     alert('your answer is false  ')
 }
-console.log(food);
+// console.log(food);
 
 let graduation = prompt('is i graduated from university of jordan  ?').toLowerCase();
 if ((graduation === 'yes') || (graduation === 'y')) {
@@ -31,7 +37,7 @@ if ((graduation === 'yes') || (graduation === 'y')) {
     alert(' good jop, that is true ')
     score++
 }
-console.log(graduation);
+// console.log(graduation);
 
 let single = prompt('is i am single  ?').toLowerCase();
 if ((single === 'yes') || (single === 'y')) {
@@ -63,13 +69,13 @@ for (let i = 0; i < 4; i = i + 1) {
     } else {
         age1 = prompt('your answer is false ,guess it again  ')
         ans = false
-
+        
     }
-
+    
 }
 if (ans == false) {
     alert('the true answer is 28')
-
+    
 }
 
 
@@ -86,37 +92,47 @@ for (let i = 0; i < 6; i = i + 1) {
     for (let j = 0; j < bag.length; j++) {
         console.log(bag[j]);
         console.log(ans1);
-
+        
         if (ans1 === bag[j]) {
             console.log('inside if');
             alert('that is true and here is all thing in my bag :phone', 'charger', 'tissue', 'key', 'spare facemask', 'perfume')
             ans1 = true
             break;
-
-
-
+            
+            
+            
         }
-
-
-
+        
+        
+        
     }
     if (ans1 === true) {
         break;
-
+        
     }
-
+    
 }
+
+let userName = getUsername();
+greetTheUser(userName);
+askQuestionOne();
+askQuestionTwo());
+askQuestionThree();
+askQuestionFour();
+askQuestionFive();
+
+
 
 // let number = 5;
 // console.log(number + 1);
 // console.log(number);
 
 // for (let i = 0; i < 5; i++) {
-
-//     console.log('in the first loop', i);
-//     for (let j = 0; j < 10; j++) {
-//         console.log('in the second loop', j);
-
-//     }
-
-// }
+    
+    //     console.log('in the first loop', i);
+    //     for (let j = 0; j < 10; j++) {
+        //         console.log('in the second loop', j);
+        
+        //     }
+        
+        // }
