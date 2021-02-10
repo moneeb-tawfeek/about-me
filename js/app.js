@@ -43,79 +43,83 @@ function askQuestionThree() {
     }
 }
     // console.log(graduation);
-
-let single = prompt('is i am single  ?').toLowerCase();
-if ((single === 'yes') || (single === 'y')) {
-    alert(' that is true');
-    score++
-} else if ((single === 'no') || (single === 'n')) {
-    alert('your answer is false  ')
+function askQuestionFour() {
+    let single = prompt('is i am single  ?').toLowerCase();
+    if ((single === 'yes') || (single === 'y')) {
+         alert(' that is true');
+        return score++;
+    } else if ((single === 'no') || (single === 'n')) {
+        return alert('your answer is false  ')
+    }
 }
-console.log(single);
-alert('your score is ' + score + ' of 4')
+// console.log(single);
 
 
 
 
-
-
-let ages = alert('let\'s play a guessing game, you have to guess celebrities  ages   ')
-
-
-let age1 = prompt('how old is mo salah  ?');
-let ans = true;
-
-for (let i = 0; i < 4; i = i + 1) {
-    if ((age1 < 30) && (age1 > 25)) {
-        alert(' that is closly true , he is in the 3ed decad');
-        score++
-        ans = true
-        break;
-    } else {
-        age1 = prompt('your answer is false ,guess it again  ')
-        ans = false
+function askQuestionFive() {
+    
+    let ages = alert('let\'s play a guessing game, you have to guess celebrities  ages   ')
+    let age1 = prompt('how old is mo salah  ?');
+    let ans = true;
+    
+    for (let i = 0; i < 4; i = i + 1) {
+        if ((age1 < 30) && (age1 > 25)) {
+            alert(' that is closly true , he is in the 3ed decad');
+            score++
+            ans = true
+            break;
+        } else {
+            age1 = prompt('your answer is false ,guess it again  ')
+            ans = false
+            
+        }
         
     }
-    
+    if (ans == false) {
+        alert('the true answer is 28');  
+    }
+    return score;
 }
-if (ans == false) {
-    alert('the true answer is 28')
+
+
+
+
+function askQuestionSix() {
+    let bag = ['phone', 'charger', 'tissue', 'key', 'spare facemask', 'perfume'];
+    // console.log(bag[1]);
     
-}
-
-
-
-let bag = ['phone', 'charger', 'tissue', 'key', 'spare facemask', 'perfume'];
-// console.log(bag[1]);
-
-for (let i = 0; i < 6; i = i + 1) {
-    let ans1 = prompt('guess what i have in my bag')
-    // bag[0]
-    // bag[1]
-    //bag[2]
-    // console.log(bag[i]);
-    for (let j = 0; j < bag.length; j++) {
-        console.log(bag[j]);
-        console.log(ans1);
-        
-        if (ans1 === bag[j]) {
-            console.log('inside if');
-            alert('that is true and here is all thing in my bag :phone', 'charger', 'tissue', 'key', 'spare facemask', 'perfume')
-            ans1 = true
-            break;
+    for (let i = 0; i < 6; i = i + 1) {
+        let ans1 = prompt('guess what i have in my bag')
+        // bag[0]
+        // bag[1]
+        //bag[2]
+        // console.log(bag[i]);
+        for (let j = 0; j < bag.length; j++) {
+            console.log(bag[j]);
+            console.log(ans1);
+            
+            if (ans1 === bag[j]) {
+                console.log('inside if');
+                alert('that is true and here is all thing in my bag :phone', 'charger', 'tissue', 'key', 'spare facemask', 'perfume')
+                ans1 = true
+                score++;
+                break;
+                
+                
+                
+            }
             
             
             
         }
-        
-        
-        
-    }
-    if (ans1 === true) {
-        break;
+        if (ans1 === true) {
+            break;
+            
+        }
         
     }
-    
+    return score;
 }
 
 let userName = getUsername();
@@ -125,7 +129,9 @@ askQuestionTwo();
 askQuestionThree();
 askQuestionFour();
 askQuestionFive();
+askQuestionSix();
 
+alert('your score is ' + score + ' of 6')
 
 // let number = 5;
 // console.log(number + 1);
