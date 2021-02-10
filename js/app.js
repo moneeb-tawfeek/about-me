@@ -32,15 +32,17 @@ function askQuestionTwo() {
     }
 }
 // console.log(food);
-
-let graduation = prompt('is i graduated from university of jordan  ?').toLowerCase();
-if ((graduation === 'yes') || (graduation === 'y')) {
-    alert('your answer is false');
-} else if ((graduation === 'no') || (graduation === 'n')) {
-    alert(' good jop, that is true ')
-    score++
+function askQuestionThree() {
+    
+    let graduation = prompt('is i graduated from university of jordan  ?').toLowerCase();
+    if ((graduation === 'yes') || (graduation === 'y')) {
+        return alert('your answer is false');
+    } else if ((graduation === 'no') || (graduation === 'n')) {
+        alert(' good jop, that is true ')
+        return score++;
+    }
 }
-// console.log(graduation);
+    // console.log(graduation);
 
 let single = prompt('is i am single  ?').toLowerCase();
 if ((single === 'yes') || (single === 'y')) {
