@@ -22,13 +22,14 @@ function askQuestionOne() {
     
 }
 // console.log(work);
-
-let food = prompt('is my favorites food mansaf  ?').toLowerCase();
-if ((food === 'yes') || (food === 'y')) {
-    alert('good jop, that is true');
-    score++
-} else if ((food === 'no') || (food === 'n')) {
-    alert('your answer is false  ')
+function askQuestionTwo() {
+    let food = prompt('is my favorites food mansaf  ?').toLowerCase();
+    if ((food === 'yes') || (food === 'y')) {
+        alert('good jop, that is true');
+        return score++;
+    } else if ((food === 'no') || (food === 'n')) {
+        return alert('your answer is false  ');
+    }
 }
 // console.log(food);
 
