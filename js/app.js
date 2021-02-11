@@ -134,4 +134,3 @@ alert('your score is ' + score + ' of 6')
 
 
 
-    < script src = "js/app.js" >
